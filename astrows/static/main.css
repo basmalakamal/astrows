@@ -1,0 +1,78 @@
+.info{
+    background-color: #F4F6F7 ;
+}
+
+nav {
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #6c63ff ;
+    padding-bottom: 5px;
+    
+}
+#nav{
+    color: white;
+}
+#nav:hover{
+    color: #3f3d56 ;
+}
+#button{
+    background-color:#6c63ff ;
+    border-color:#6c63ff ;
+    color: white;
+
+}
+#button:hover{
+    background-color:white ;
+    border-color:#6c63ff ;
+    color: #6c63ff;
+
+}
+
+.text{
+    color: #6c63ff;
+    margin-top: 300px;
+    font-weight: bold;
+    font-size: larger;
+   
+}
+.words{
+    font-weight: lighter;
+}
+footer{
+    color: #6c63ff;
+}
+.db{
+    margin-top: 20px;
+    background-color: #f4f6ff;
+}
+.card-text{
+    color: #654062;
+    font-weight: bold;
+}
+.headline{
+    color:  #1f4068 ;
+}
+hr{
+    color:  #1f4068 ;
+}
+.title{
+    color:  #1f4068 ;
+}
+.title:hover{
+    color: #6c63ff;
+}
+.date{
+    color: #1f4068 ;
+}
+.content{
+    color: #1f4068 ;
+    font-size: larger;
+    
+}
+.title2{
+    color: #1f4068 ;
+}
+.content2{
+    font-weight: bold;
+    color: #6c63ff;
+}

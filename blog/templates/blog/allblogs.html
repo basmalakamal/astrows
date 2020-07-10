@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Galactic Astronauts</title>
+      <link rel="stylesheet" href="{% static 'main.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar">
+            <a class="navbar-brand nav-item" id="nav" href="{% url 'home'%}"><img src="{% static 'top6.svg' %}" height=60 width=70></a>
+            <a class="navbar-brand nav-item" id="nav" href="{% url 'home'%}">Galactic Astronauts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active" >
+                  <a class="nav-link" href="{% url 'home'%}" id="nav">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'allblogs'%}" id="nav">Posts</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="nav">About</a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+    </head>
+  <body>
+
+
+<main role="main">
+    <div class="container">
+<br />
+<br />
+<br>
+<br>
+<br>
+<h2 class="headline text-center">Latest posts about Astronomy</h2>
+<hr />
+<div class="row">
+{% for blog in blogs.all %}
+<div class="col-sm-4">
+<a href="{% url 'detail' blog.id %}"><h3 class="title">{{ blog.title }} </h3> </a>
+<p class="content2">{{ blog.pub_date_pretty }}</p>
+<br />
+<img class="img-fluid" src="{{ blog.image.url }}" height=200 width=200>
+<br />
+<p class="content2">{{ blog.summary }} </p>
+</div>
+
+
+{% endfor %}
+</div>
+</div>
+</main>
+
+<footer class="text-muted text-center">
+  <div class="container">
+
+    
+    <p>© GALACTIC ASTRONAUTS {% now "Y" %}</p>
+  </div>
+</footer>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script></body>
+</html>
