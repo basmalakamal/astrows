@@ -1,0 +1,1 @@
+web: gunicorn astrows.wsgi --log-file -
