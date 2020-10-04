@@ -5,7 +5,7 @@
 nav {
     font-size: 18px;
     text-transform: uppercase;
-    background-color: #6c63ff ;
+    background-color: #1f4068 ;
     padding-bottom: 5px;
     
 }
@@ -16,20 +16,20 @@ nav {
     color: #3f3d56 ;
 }
 #button{
-    background-color:#6c63ff ;
-    border-color:#6c63ff ;
+    background-color:#1f4068 ;
+    border-color:#1f4068 ;
     color: white;
 
 }
 #button:hover{
     background-color:white ;
-    border-color:#6c63ff ;
-    color: #6c63ff;
+    border-color:#1f4068 ;
+    color: #1f4068;
 
 }
 
 .text{
-    color: #6c63ff;
+    color: #1f4068;
     margin-top: 300px;
     font-weight: bold;
     font-size: larger;
@@ -39,7 +39,7 @@ nav {
     font-weight: lighter;
 }
 footer{
-    color: #6c63ff;
+    color:#1f4068;
 }
 .db{
     margin-top: 20px;
@@ -59,7 +59,7 @@ hr{
     color:  #1f4068 ;
 }
 .title:hover{
-    color: #6c63ff;
+    color: #1f4068;
 }
 .date{
     color: #1f4068 ;
@@ -74,5 +74,5 @@ hr{
 }
 .content2{
     font-weight: bold;
-    color: #6c63ff;
+    color: #1f4068;
 }
